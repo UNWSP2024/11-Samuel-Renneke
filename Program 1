@@ -1,0 +1,29 @@
+# Program 1
+# Samuel Renneke, 4/15/2026
+
+import tkinter
+
+class MyGUI:
+
+    def __init__ (self):
+
+        self.main_window = tkinter.Tk()
+
+        self.main_window.title("Favorite Saying")
+
+        self.label1 = tkinter.Label(self.main_window,
+
+            text = "It is better to offer no excuse than a bad one.")
+
+        self.label2 = tkinter.Label(self.main_window,
+
+            text = " - George Washington")
+
+        self.label1.pack()
+        self.label2.pack()
+
+        tkinter.mainloop()
+
+if __name__ == "__main__":
+
+    my_gui = MyGUI()
